@@ -24,7 +24,7 @@ class School(Base):
     image = Column(String(500))  
     technical_sheet_url = Column(String(500))  
 
-    def dto_dict(self):
+    def to_dict(self):
         return {
             'id': self.id,
             'name': self.name,
